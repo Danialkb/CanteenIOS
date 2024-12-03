@@ -82,7 +82,6 @@
 				4EBA60CA5E34DD40B66906E2 /* Pods-CanteenApp.debug.xcconfig */,
 				F6FE00079001DC25C98D4E98 /* Pods-CanteenApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
