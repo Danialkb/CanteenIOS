@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  CanteenApp
 //
-//  Created by мак on 03.12.2024.
+//  Created by мак on 09.12.2024.
 //
 
 import UIKit
@@ -16,4 +16,3 @@ class ViewController: UIViewController {
 
 
 }
-

@@ -17,13 +17,20 @@ class NetworkClient {
         responseType: T.Type,
         completion: @escaping (Result<T, AFError>) -> Void
     ) {
-        AF.request(urlString, method: method, parameters: parameters, encoding: encoding, headers: headers).responseDecodable(of: responseType) { response in
-                switch response.result {
-                case .success(let data):
-                    completion(.success(data))
-                case .failure(let error):
-                    completion(.failure(error))
-                }
+        
+        var finalHeaders = headers ?? HTTPHeaders()
+            
+        if let token = UserDefaults.standard.string(forKey: "authToken") {
+            finalHeaders.add(name: "Authorization", value: "Bearer \(token)")
+        }
+        
+        AF.request(urlString, method: method, parameters: parameters, encoding: encoding, headers: finalHeaders).responseDecodable(of: responseType) { response in
+            switch response.result {
+            case .success(let data):
+                completion(.success(data))
+            case .failure(let error):
+                completion(.failure(error))
             }
+        }
     }
 }
