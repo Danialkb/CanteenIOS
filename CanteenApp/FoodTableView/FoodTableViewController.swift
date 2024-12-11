@@ -12,7 +12,7 @@ class FoodTableViewController: UIViewController, UITableViewDataSource, UITableV
     @IBOutlet weak var searchInput: UITextField!
     
     var foodList: [Food] = []
-    let foodService = FoodService()
+    var foodService = FoodService()
     
     override func viewDidLoad() {
         super.viewDidLoad()

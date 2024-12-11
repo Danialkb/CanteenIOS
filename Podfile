@@ -6,6 +6,12 @@ target 'CanteenApp' do
   use_frameworks!
 
   # Pods for CanteenApp
-pod 'Alamofire'
-pod 'Kingfisher'
+  pod 'Alamofire'
+  pod 'Kingfisher'
+
+  target 'CanteenAppTests' do
+    inherit! :search_paths
+    pod 'Alamofire'
+    pod 'Kingfisher'
+  end
 end
