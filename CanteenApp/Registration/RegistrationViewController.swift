@@ -16,7 +16,7 @@ class RegistrationViewController: UIViewController {
     
     @IBOutlet weak var passwordInput: UITextField!
     
-    let userService = UserService()
+    var userService = UserService()
     
     override func viewDidLoad() {
         super.viewDidLoad()

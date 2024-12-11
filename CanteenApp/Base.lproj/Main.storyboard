@@ -80,7 +80,7 @@
         <!--FoodList-->
         <scene sceneID="Pbu-Wv-iTr">
             <objects>
-                <viewController title="FoodList" id="GBt-dL-Rdn" customClass="FoodTableViewController" customModule="CanteenApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FoodTableViewController" title="FoodList" id="GBt-dL-Rdn" customClass="FoodTableViewController" customModule="CanteenApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2tO-33-jy7">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -218,7 +218,7 @@
         <!--Authentication View Controller-->
         <scene sceneID="rjl-FX-gdd">
             <objects>
-                <viewController id="uOm-bb-cqN" customClass="AuthenticationViewController" customModule="CanteenApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AuthenticationViewController" id="uOm-bb-cqN" customClass="AuthenticationViewController" customModule="CanteenApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="psw-mi-JCS">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -282,7 +282,7 @@
         <!--Registration View Controller-->
         <scene sceneID="NWx-xW-4eb">
             <objects>
-                <viewController id="hlj-tC-wSP" customClass="RegistrationViewController" customModule="CanteenApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegistrationViewController" id="hlj-tC-wSP" customClass="RegistrationViewController" customModule="CanteenApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zlf-V1-Z4P">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -365,7 +365,7 @@
         <!--Registration Confirmation View Controller-->
         <scene sceneID="f9H-Ub-cnJ">
             <objects>
-                <viewController id="sw9-lL-CBQ" customClass="RegistrationConfirmationViewController" customModule="CanteenApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegistrationConfirmationViewController" id="sw9-lL-CBQ" customClass="RegistrationConfirmationViewController" customModule="CanteenApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oui-kR-CqQ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -476,7 +476,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="zkS-3j-WPm"/>
+        <segue reference="Wf5-4r-Juf"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="note" catalog="system" width="128" height="107"/>

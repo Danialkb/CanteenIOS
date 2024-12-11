@@ -9,7 +9,7 @@ import UIKit
 
 class AuthenticationViewController: UIViewController {
     
-    let userService = UserService()
+    var userService = UserService()
     
     @IBOutlet weak var emailInput: UITextField!
     

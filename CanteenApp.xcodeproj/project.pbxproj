@@ -8,12 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		28EC50412710ED90DC0C1319 /* Pods_CanteenApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 946DAACCEFDA08C3C5D15346 /* Pods_CanteenApp.framework */; };
+		6FBDBD716B13F663B355D587 /* Pods_CanteenAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AC69D7642197CCE331B24D8 /* Pods_CanteenAppTests.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		246FBCDC2D09583700B7BC8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 246CA0E52CFEDDC2002EB9E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 246CA0EC2CFEDDC2002EB9E1;
+			remoteInfo = CanteenApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		158F2D2DFD676ECB30382A22 /* Pods-CanteenAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanteenAppTests.debug.xcconfig"; path = "Target Support Files/Pods-CanteenAppTests/Pods-CanteenAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		246CA0ED2CFEDDC2002EB9E1 /* CanteenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanteenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		246FBCD82D09583700B7BC8B /* CanteenAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanteenAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		47C57BC6E4B546D2B8B399C2 /* Pods-CanteenApp-CanteenAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanteenApp-CanteenAppTests.debug.xcconfig"; path = "Target Support Files/Pods-CanteenApp-CanteenAppTests/Pods-CanteenApp-CanteenAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4AC69D7642197CCE331B24D8 /* Pods_CanteenAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CanteenAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EBA60CA5E34DD40B66906E2 /* Pods-CanteenApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanteenApp.debug.xcconfig"; path = "Target Support Files/Pods-CanteenApp/Pods-CanteenApp.debug.xcconfig"; sourceTree = "<group>"; };
+		511E83A9A07B1122D9E45A8C /* Pods-CanteenApp-CanteenAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanteenApp-CanteenAppTests.release.xcconfig"; path = "Target Support Files/Pods-CanteenApp-CanteenAppTests/Pods-CanteenApp-CanteenAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		946DAACCEFDA08C3C5D15346 /* Pods_CanteenApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CanteenApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F589D2AE2A5D2799B23F3127 /* Pods-CanteenAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanteenAppTests.release.xcconfig"; path = "Target Support Files/Pods-CanteenAppTests/Pods-CanteenAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		F6FE00079001DC25C98D4E98 /* Pods-CanteenApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanteenApp.release.xcconfig"; path = "Target Support Files/Pods-CanteenApp/Pods-CanteenApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -36,6 +53,11 @@
 			path = CanteenApp;
 			sourceTree = "<group>";
 		};
+		246FBCD92D09583700B7BC8B /* CanteenAppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CanteenAppTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +69,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		246FBCD52D09583700B7BC8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FBDBD716B13F663B355D587 /* Pods_CanteenAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -54,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				246CA0EF2CFEDDC2002EB9E1 /* CanteenApp */,
+				246FBCD92D09583700B7BC8B /* CanteenAppTests */,
 				246CA0EE2CFEDDC2002EB9E1 /* Products */,
 				C34F15872406A23856DFDA58 /* Pods */,
 				9FFB6A11A73EFF4769A3ABF4 /* Frameworks */,
@@ -64,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				246CA0ED2CFEDDC2002EB9E1 /* CanteenApp.app */,
+				246FBCD82D09583700B7BC8B /* CanteenAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				946DAACCEFDA08C3C5D15346 /* Pods_CanteenApp.framework */,
+				4AC69D7642197CCE331B24D8 /* Pods_CanteenAppTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -81,6 +114,10 @@
 			children = (
 				4EBA60CA5E34DD40B66906E2 /* Pods-CanteenApp.debug.xcconfig */,
 				F6FE00079001DC25C98D4E98 /* Pods-CanteenApp.release.xcconfig */,
+				47C57BC6E4B546D2B8B399C2 /* Pods-CanteenApp-CanteenAppTests.debug.xcconfig */,
+				511E83A9A07B1122D9E45A8C /* Pods-CanteenApp-CanteenAppTests.release.xcconfig */,
+				158F2D2DFD676ECB30382A22 /* Pods-CanteenAppTests.debug.xcconfig */,
+				F589D2AE2A5D2799B23F3127 /* Pods-CanteenAppTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -110,6 +147,29 @@
 			productReference = 246CA0ED2CFEDDC2002EB9E1 /* CanteenApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		246FBCD72D09583700B7BC8B /* CanteenAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 246FBCE02D09583700B7BC8B /* Build configuration list for PBXNativeTarget "CanteenAppTests" */;
+			buildPhases = (
+				451D9C704609D36D96F20376 /* [CP] Check Pods Manifest.lock */,
+				246FBCD42D09583700B7BC8B /* Sources */,
+				246FBCD52D09583700B7BC8B /* Frameworks */,
+				246FBCD62D09583700B7BC8B /* Resources */,
+				A820DA33DB9436875415B12F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				246FBCDD2D09583700B7BC8B /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				246FBCD92D09583700B7BC8B /* CanteenAppTests */,
+			);
+			name = CanteenAppTests;
+			productName = CanteenAppTests;
+			productReference = 246FBCD82D09583700B7BC8B /* CanteenAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -122,6 +182,10 @@
 				TargetAttributes = {
 					246CA0EC2CFEDDC2002EB9E1 = {
 						CreatedOnToolsVersion = 16.1;
+					};
+					246FBCD72D09583700B7BC8B = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 246CA0EC2CFEDDC2002EB9E1;
 					};
 				};
 			};
@@ -140,6 +204,7 @@
 			projectRoot = "";
 			targets = (
 				246CA0EC2CFEDDC2002EB9E1 /* CanteenApp */,
+				246FBCD72D09583700B7BC8B /* CanteenAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -152,9 +217,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		246FBCD62D09583700B7BC8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		451D9C704609D36D96F20376 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CanteenAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8F226DA5F77E4A6D2B815226 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -170,6 +264,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CanteenApp/Pods-CanteenApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A820DA33DB9436875415B12F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CanteenAppTests/Pods-CanteenAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CanteenAppTests/Pods-CanteenAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CanteenAppTests/Pods-CanteenAppTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CBC4E5CAD16F2A5672105E77 /* [CP] Check Pods Manifest.lock */ = {
@@ -204,7 +315,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		246FBCD42D09583700B7BC8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		246FBCDD2D09583700B7BC8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 246CA0EC2CFEDDC2002EB9E1 /* CanteenApp */;
+			targetProxy = 246FBCDC2D09583700B7BC8B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		246CA1012CFEDDC4002EB9E1 /* Debug */ = {
@@ -382,6 +508,44 @@
 			};
 			name = Release;
 		};
+		246FBCDE2D09583700B7BC8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 158F2D2DFD676ECB30382A22 /* Pods-CanteenAppTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KBTU.CanteenAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CanteenApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CanteenApp";
+			};
+			name = Debug;
+		};
+		246FBCDF2D09583700B7BC8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F589D2AE2A5D2799B23F3127 /* Pods-CanteenAppTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KBTU.CanteenAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CanteenApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CanteenApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -399,6 +563,15 @@
 			buildConfigurations = (
 				246CA1012CFEDDC4002EB9E1 /* Debug */,
 				246CA1022CFEDDC4002EB9E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		246FBCE02D09583700B7BC8B /* Build configuration list for PBXNativeTarget "CanteenAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				246FBCDE2D09583700B7BC8B /* Debug */,
+				246FBCDF2D09583700B7BC8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

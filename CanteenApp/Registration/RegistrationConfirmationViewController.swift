@@ -9,7 +9,7 @@ import UIKit
 
 class RegistrationConfirmationViewController: UIViewController {
     
-    let userService = UserService()
+    var userService = UserService()
     
     @IBOutlet weak var codeInput: UITextField!
     
