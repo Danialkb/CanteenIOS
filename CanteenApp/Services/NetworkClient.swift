@@ -17,10 +17,9 @@ class NetworkClient {
         responseType: T.Type,
         completion: @escaping (Result<T, AFError>) -> Void
     ) {
-        
         var finalHeaders = headers ?? HTTPHeaders()
             
-        if let token = UserDefaults.standard.string(forKey: "authToken") {
+        if let token = UserDefaults.standard.string(forKey: "access_token") {
             finalHeaders.add(name: "Authorization", value: "Bearer \(token)")
         }
         

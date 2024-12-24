@@ -10,25 +10,21 @@ class CartService {
     
    
     func getCart (completion: @escaping(Result<[Order], AFError>) -> Void){
-        var finalHeaders = HTTPHeaders()
-            
-        if let token = UserDefaults.standard.string(forKey: "authToken") {
-            finalHeaders.add(name: "Authorization", value: "Bearer \(token)")
+//        var finalHeaders = HTTPHeaders()
+//            
+//        if let token = UserDefaults.standard.string(forKey: "authToken") {
+//            finalHeaders.add(name: "Authorization", value: "Bearer \(token)")
+//        }
+        networkClient.request(
+            urlString: "\(endpoint)/my_orders/",
+            method: .get,
+            parameters: nil,
+            encoding: URLEncoding.default,
+            headers: nil,
+            responseType: [Order].self
+        ) { result in
+            completion(result)
         }
-//            networkClient.request(
-//                urlString: "\(endpoint)/my_orders/",
-//                method: .get,
-//                parameters: nil,
-//                encoding: URLEncoding.default,
-//                headers: nil,
-//                responseType: [Order].self
-//            ) { result in
-//                completion(result)
-//            }
-        AF.request("\(endpoint)/my_orders/", headers: finalHeaders)
-            .response { response in
-                debugPrint(response)
-            }
 
     }
     
