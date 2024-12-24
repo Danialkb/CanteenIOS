@@ -29,9 +29,9 @@ struct OrderSchema: Encodable {
 }
 
 struct OrderCreatedResponse: Decodable {
-//    var food: String
-//    var amount: Int
-//    var special_wishes: String
+    var food: String
+    var amount: Int
+    var special_wishes: String
 }
 
 
