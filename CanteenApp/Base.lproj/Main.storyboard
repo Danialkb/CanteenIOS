@@ -153,6 +153,78 @@
             </objects>
             <point key="canvasLocation" x="2925.9541984732823" y="1434.5070422535211"/>
         </scene>
+        <!--Cart View Controller-->
+        <scene sceneID="t0a-fw-ND9">
+            <objects>
+                <viewController id="c6Y-gI-bbw" customClass="CartViewController" customModule="CanteenApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0mG-kv-iHR">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gHX-Dc-Dfa">
+                                <rect key="frame" x="16" y="185" width="361" height="496"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="hqe-nQ-tmI">
+                                        <rect key="frame" x="0.0" y="50" width="361" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hqe-nQ-tmI" id="uw0-oA-oRh">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2x-xC-ST5">
+                                <rect key="frame" x="16" y="132" width="133" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Za-Sy-Tid">
+                                <rect key="frame" x="244" y="132" width="133" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPf-EN-dki">
+                                <rect key="frame" x="16" y="725" width="361" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="hab-Oa-16j"/>
+                                    <constraint firstAttribute="width" constant="361" id="qVr-z2-xzE"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LDW-CK-3NS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LDW-CK-3NS" firstAttribute="trailing" secondItem="gHX-Dc-Dfa" secondAttribute="trailing" constant="16" id="0K5-PP-yHD"/>
+                            <constraint firstItem="JPf-EN-dki" firstAttribute="top" secondItem="gHX-Dc-Dfa" secondAttribute="bottom" constant="44" id="1yk-VD-rbC"/>
+                            <constraint firstItem="5Za-Sy-Tid" firstAttribute="leading" secondItem="d2x-xC-ST5" secondAttribute="trailing" constant="95" id="2SN-e1-POY"/>
+                            <constraint firstItem="gHX-Dc-Dfa" firstAttribute="top" secondItem="d2x-xC-ST5" secondAttribute="bottom" constant="18" id="6Ol-iM-dWD"/>
+                            <constraint firstItem="LDW-CK-3NS" firstAttribute="trailing" secondItem="JPf-EN-dki" secondAttribute="trailing" constant="16" id="EEi-dq-dUo"/>
+                            <constraint firstItem="JPf-EN-dki" firstAttribute="top" secondItem="gHX-Dc-Dfa" secondAttribute="bottom" constant="44" id="FrS-0n-bFf"/>
+                            <constraint firstItem="JPf-EN-dki" firstAttribute="leading" secondItem="LDW-CK-3NS" secondAttribute="leading" constant="16" id="Gou-At-mN2"/>
+                            <constraint firstItem="5Za-Sy-Tid" firstAttribute="top" secondItem="LDW-CK-3NS" secondAttribute="top" constant="29" id="Int-23-dR5"/>
+                            <constraint firstItem="gHX-Dc-Dfa" firstAttribute="leading" secondItem="LDW-CK-3NS" secondAttribute="leading" constant="16" id="NGl-TK-Qf6"/>
+                            <constraint firstItem="5Za-Sy-Tid" firstAttribute="leading" secondItem="d2x-xC-ST5" secondAttribute="trailing" constant="95" id="S2k-GE-AiU"/>
+                            <constraint firstItem="gHX-Dc-Dfa" firstAttribute="top" secondItem="5Za-Sy-Tid" secondAttribute="bottom" constant="18" id="VIX-lp-W5w"/>
+                            <constraint firstItem="gHX-Dc-Dfa" firstAttribute="top" secondItem="d2x-xC-ST5" secondAttribute="bottom" constant="18" id="ZJ6-c4-FkO"/>
+                            <constraint firstItem="LDW-CK-3NS" firstAttribute="trailing" secondItem="5Za-Sy-Tid" secondAttribute="trailing" constant="16" id="aZc-5N-s5r"/>
+                            <constraint firstItem="d2x-xC-ST5" firstAttribute="leading" secondItem="LDW-CK-3NS" secondAttribute="leading" constant="16" id="e0u-HN-TDW"/>
+                            <constraint firstItem="d2x-xC-ST5" firstAttribute="top" secondItem="LDW-CK-3NS" secondAttribute="top" constant="29" id="pRI-Js-lfC"/>
+                            <constraint firstItem="JPf-EN-dki" firstAttribute="bottom" secondItem="LDW-CK-3NS" secondAttribute="bottom" id="sgb-Wg-rR9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mPs-1c-mr1"/>
+                    <connections>
+                        <outlet property="cartTableView" destination="gHX-Dc-Dfa" id="Xgd-5P-qig"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gEG-aA-Su2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4067.9389312977096" y="1434.5070422535211"/>
+        </scene>
         <!--FoodDetails-->
         <scene sceneID="s5l-ga-a6H">
             <objects>
@@ -449,6 +521,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="sWN-Xv-RJv" kind="relationship" relationship="viewControllers" id="zVG-ne-sUA"/>
+                        <segue destination="ye7-ad-rV3" kind="relationship" relationship="viewControllers" id="W9z-WV-Ff4"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dDA-IU-s1f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -474,9 +547,29 @@
             </objects>
             <point key="canvasLocation" x="2925.9541984732823" y="682.3943661971831"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="KLV-hK-Xwy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ye7-ad-rV3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ZVN-HN-z3G"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="EEz-tk-LL1"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mVn-x8-RoW">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="c6Y-gI-bbw" kind="relationship" relationship="rootViewController" id="plu-92-MkQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Pg-ON-DdT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4069" y="682"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Wf5-4r-Juf"/>
+        <segue reference="zkS-3j-WPm"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="note" catalog="system" width="128" height="107"/>
@@ -484,7 +577,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
