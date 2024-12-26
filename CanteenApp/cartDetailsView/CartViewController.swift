@@ -11,10 +11,10 @@ import UIKit
 class CartViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, CanRemoveCellFromTable {
     
     
-    @IBOutlet weak var sendOrdersBitton: UIButton!
+    @IBOutlet weak var sendOrdersButton: UIButton!
     @IBOutlet weak var cartTableView: UITableView!
     
-    @IBOutlet weak var makeOrderButton: UIButton!
+    @IBOutlet weak var waitingOrdersButton: UIButton!
     @IBOutlet weak var activeOrdersButton: UIButton!
     var orderList: [Order] = []
     var cartService = CartService()
@@ -25,15 +25,11 @@ class CartViewController: UIViewController, UITableViewDataSource, UITableViewDe
         cartTableView.dataSource = self
         cartTableView.delegate = self
         cartTableView.register(CartTableViewCell.nib(), forCellReuseIdentifier: CartTableViewCell.identifier)
-        loadCart()
-        
-//        makeOrderButton.titleLabel?.textColor = UIColor.systemOrange
-        
-        makeOrderButton.setTitleColor(UIColor.systemOrange, for: .normal)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        waitingOrdersButton.isSelected = true
         loadCart()
     }
     
@@ -47,22 +43,22 @@ class CartViewController: UIViewController, UITableViewDataSource, UITableViewDe
             }
         }
     }
-    @IBAction func getWaitingOrders(_ sender: Any) {
+    @IBAction func getWaitingOrders(_ sender: UIButton) {
         orderFilterChoice = OrderStatus.waiting
         loadCart()
-        sendOrdersBitton.isHidden = false
+        sendOrdersButton.isHidden = false
         
-        activeOrdersButton.titleLabel?.textColor = UIColor.black
-        
+        sender.isSelected = true
+        activeOrdersButton.isSelected = false
     }
     
-    @IBAction func getActiveOrders(_ sender: Any) {
+    @IBAction func getActiveOrders(_ sender: UIButton) {
         orderFilterChoice = OrderStatus.processing
         loadCart()
-        sendOrdersBitton.isHidden = true
+        sendOrdersButton.isHidden = true
         
-//        activeOrdersButton.titleLabel?.textColor = UIColor.red
-        makeOrderButton.titleLabel?.textColor = UIColor.black
+        sender.isSelected = true
+        waitingOrdersButton.isSelected = false
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

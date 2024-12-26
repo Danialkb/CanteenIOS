@@ -19,7 +19,6 @@ class FoodTableViewController: UIViewController, UITableViewDataSource, UITableV
         foodListTableView.dataSource = self
         foodListTableView.delegate = self
         foodListTableView.register(FoodTableViewCell.nib(), forCellReuseIdentifier: FoodTableViewCell.identifier)
-        loadMenu()
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -244,8 +244,8 @@
                     <connections>
                         <outlet property="activeOrdersButton" destination="5Za-Sy-Tid" id="oe8-9T-KEK"/>
                         <outlet property="cartTableView" destination="gHX-Dc-Dfa" id="Xgd-5P-qig"/>
-                        <outlet property="makeOrderButton" destination="d2x-xC-ST5" id="hqs-xg-biI"/>
-                        <outlet property="sendOrdersBitton" destination="JPf-EN-dki" id="ee7-N2-Xx9"/>
+                        <outlet property="sendOrdersButton" destination="JPf-EN-dki" id="ee7-N2-Xx9"/>
+                        <outlet property="waitingOrdersButton" destination="d2x-xC-ST5" id="hqs-xg-biI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gEG-aA-Su2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
