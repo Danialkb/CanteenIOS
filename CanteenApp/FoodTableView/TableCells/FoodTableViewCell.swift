@@ -30,8 +30,7 @@ class FoodTableViewCell: UITableViewCell {
 
     @IBAction func addToCart(_ sender: UIButton) {
         let orderSchema = OrderSchema(food: foodId, amount: 1, special_wishes: "")
-        cartService.addToCart(orderData: orderSchema)
-        {
+        cartService.addToCart(orderData: orderSchema){
             result in
             switch result {
             case .failure(let error):
@@ -40,12 +39,6 @@ class FoodTableViewCell: UITableViewCell {
                 print("succes")
             }
         }
-//        do {
-//            print(try orderSchema.asDictionary())
-//        }catch{
-//            print("")
-//        }
-        
     }
     
     static func nib() -> UINib {

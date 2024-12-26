@@ -22,6 +22,11 @@ class FoodTableViewController: UIViewController, UITableViewDataSource, UITableV
         loadMenu()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        loadMenu()
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return foodList.count
     }
@@ -52,7 +57,8 @@ class FoodTableViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func loadMenu() {
-        foodService.getMenu(search: searchInput.text ?? "") { [weak self] result in
+        foodService.getMenu(search: searchInput.text ?? "") {
+            [weak self] result in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let response):

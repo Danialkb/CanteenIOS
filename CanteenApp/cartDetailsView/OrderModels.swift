@@ -9,7 +9,7 @@ import Foundation
 
 enum OrderStatus: String, Decodable {
     case waiting = "Waiting"
-    case accepted = "Accepted"
+    case processing = "Processing"
 }
 
 struct Order: Decodable {
@@ -27,6 +27,17 @@ struct OrderSchema: Encodable {
     let amount: Int
     let special_wishes: String
 }
+
+struct OrderUpdateSchema: Encodable {
+    let amount: Int
+    let special_wishes: String
+}
+
+struct OrderUpdateResponse: Decodable {
+    var special_wishes: String
+    var amount: Int
+}
+
 
 struct OrderCreatedResponse: Decodable {
     var food: String
