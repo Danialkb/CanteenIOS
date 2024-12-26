@@ -70,4 +70,19 @@ class UserService {
             completion(.failure(AFError.parameterEncodingFailed(reason: .jsonEncodingFailed(error: error))))
         }
     }
+    
+    
+    func getUser(completion: @escaping (Result<UserResponse, AFError>) -> Void) {
+        networkClient.request(
+            urlString: "\(endpoint)user/",
+            method: .get,
+            parameters: nil,
+            encoding: URLEncoding.default,
+            headers: nil,
+            responseType: UserResponse.self
+        ) { result in
+            completion(result)
+        }
+    }
+
 }
